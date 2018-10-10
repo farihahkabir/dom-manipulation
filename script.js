@@ -14,5 +14,11 @@ textBtn.addEventListener('click', function(event){
     task2.appendChild(paragraph);
 });
 
+//Task 2b:
+function changeBGcolor(event){
+    var body = document.getElementsByTagName('body')[0];
+    body.style.backgroundColor = event.target.innerText.toLowerCase();
+}
+
 
 /* Task 4 using jQuery */
