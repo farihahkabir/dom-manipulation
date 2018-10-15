@@ -46,3 +46,9 @@ $('#addText4').click(function(event){
     var paragraph = $('<p>').text('Hello World');  //only added in script code, not to DOM
     $('#task4a').append(paragraph);  //adds to DOM
 });
+
+//Task 4b
+function changeBG(event){
+    var color = event.target.innerText.toLowerCase();
+    $('body').css('background-color', color)
+}
