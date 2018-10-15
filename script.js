@@ -5,6 +5,7 @@ console.log(heading.innerText);
 heading.innerHTML = "<h3> Text changed </h3>";
 
 /* Task 2 using plain JavaScript */
+
 //Task 2a:
 //var test=1;
 var textBtn = document.getElementById('addText2');
@@ -31,6 +32,7 @@ function changeBGcolor(event){
     //     body.style.backgroundColor = 'green';
     // }
 }
+
 
 //Task 2c
 function redirectToGoogle(event){
