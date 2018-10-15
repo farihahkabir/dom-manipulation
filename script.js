@@ -18,6 +18,19 @@ textBtn.addEventListener('click', function(event){
 function changeBGcolor(event){
     var body = document.getElementsByTagName('body')[0];
     body.style.backgroundColor = event.target.innerText.toLowerCase();
+    
+    //Another way of doing it:
+    // if(event.target.innerText == "Red"){
+    //     body.style.backgroundColor = 'red';
+    // }
+    // if(event.target.innerText == "Green"){
+    //     body.style.backgroundColor = 'green';
+    // }
+}
+
+//Task 2c
+function redirectToGoogle(event){
+    window.location.assign("https://www.google.com/");
 }
 
 
