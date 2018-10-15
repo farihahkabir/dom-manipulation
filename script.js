@@ -6,13 +6,17 @@ heading.innerHTML = "<h3> Text changed </h3>";
 
 /* Task 2 using plain JavaScript */
 //Task 2a:
+//var test=1;
 var textBtn = document.getElementById('addText2');
 textBtn.addEventListener('click', function(event){
     var task2 = document.getElementById('task2a');
     var paragraph = document.createElement('p');
     paragraph.innerText = "Hello World";
     task2.appendChild(paragraph);
+    //test = 3;
 });
+
+//console.log(test);
 
 //Task 2b:
 function changeBGcolor(event){
@@ -35,3 +39,8 @@ function redirectToGoogle(event){
 
 
 /* Task 4 using jQuery */
+//Task 4a
+$('#addText4').click(function(event){
+    var paragraph = $('<p>').text('Hello World');  //only added in script code, not to DOM
+    $('#task4a').append(paragraph);  //adds to DOM
+});
